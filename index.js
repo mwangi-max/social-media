@@ -10,5 +10,6 @@ socialContainer.classList.toggle('show');
 socialLinks.forEach((link)=>{
     link.addEventListener('click', ()=>{
         paragraph.innerHTML = link.innerHTML;
+        socialContainer.classList.remove('show');
     })
 })
